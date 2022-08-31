@@ -83,14 +83,21 @@ links.forEach((link) => {
     })
 })
 
+const play = document.getElementById("music-play")
+const pause = document.getElementById("music-pause")
+
 const music = new Audio('hip-hop.mp3')
-function playMusic() {
+
+play.addEventListener('click', () => {
     music.play()
     music.volume = 0.2
-}
-document.addEventListener('mousemove', playMusic)
+    pause.style.display = "flex"
+    play.style.display = "none"
+})
 
 
-window.addEventListener('click', () => {
-    music.muted = true
+pause.addEventListener('click', () => {
+    music.volume = 0
+    pause.style.display = "none"
+    play.style.display = "flex"
 })

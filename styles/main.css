@@ -84,8 +84,24 @@ a {
 	color: var(--mainLinkColor);
 }
 
+.email-box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
 #email {
 	color: var(--mainTextColor);
+	margin-right: 50px;
+}
+
+#music-play, 
+#music-pause {
+	cursor: pointer;
+}
+
+#music-pause {
+	display: none;
 }
 
 #socials--list {
