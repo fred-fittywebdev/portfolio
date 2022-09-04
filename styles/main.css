@@ -95,7 +95,7 @@ a {
 	margin-right: 50px;
 }
 
-#music-play, 
+#music-play,
 #music-pause {
 	cursor: pointer;
 }
@@ -122,6 +122,12 @@ a {
 	font-weight: 100;
 	color: var(--mainLinkColor);
 	font-size: 0.9em;
+}
+
+a.downloadable_files {
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	text-decoration-color: #0da2b8;
 }
 
 #wrapper--techstack__items {
